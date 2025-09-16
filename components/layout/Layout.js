@@ -6,7 +6,9 @@ function Layout({ children }) {
     <>
       <header className={styles.header}>
         <div className={styles.left}>
-          <Link href="/">VhdFood</Link>
+          <Link href="/">
+            <img src="./vhdfood.png" alt="vhdfood"></img>
+          </Link>
         </div>
         <div className={styles.right}>
           <Link href="/menu">Menu</Link>
@@ -16,7 +18,7 @@ function Layout({ children }) {
       <div className={styles.container}>{children}</div>
       <footer className={styles.footer}>
         <a href="https://vahidhosseini.net" target="_blank" rel="noreferrer">
-          VHD
+          VHD{" | "}
         </a>
         Next.js Project | VHD &copy; {new Date().getFullYear()}
       </footer>
