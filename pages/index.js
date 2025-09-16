@@ -1,7 +1,10 @@
+import Banner from "@/components/modules/Banner";
+import HomePage from "@/components/templates/HomePage";
+
 export default function Home() {
   return (
-    <div>
-      <h1>VhdFood</h1>
-    </div>
+    <>
+      <HomePage />
+    </>
   );
 }
