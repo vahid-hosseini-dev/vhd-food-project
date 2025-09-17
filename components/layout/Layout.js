@@ -7,7 +7,7 @@ function Layout({ children }) {
       <header className={styles.header}>
         <div className={styles.left}>
           <Link href="/">
-            <img src="./vhdfood.png" alt="vhdfood"></img>
+            <img src="/vhdfood.png" alt="vhdfood"></img>
           </Link>
         </div>
         <div className={styles.right}>
