@@ -1,7 +1,6 @@
 import CategoriesPage from "@/components/templates/CategoriesPage";
 
 function Categories({ data }) {
-  console.log(data);
   return <CategoriesPage data={data} />;
 }
 export default Categories;
@@ -11,7 +10,7 @@ export async function getServerSideProps(context) {
     query: { difficulty, time },
   } = context;
 
-  const res = await fetch("http://localhost:4000/data");
+  const res = await fetch(`${process.env.BASE_URL}/data/${id}`);
   const data = await res.json();
 
   const filteredData = data.filter((item) => {
